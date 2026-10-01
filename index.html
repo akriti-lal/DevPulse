@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevPulse — Developer Daily Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span>◆</span> DevPulse</div>
+    <div class="date" id="today"></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">DEVELOPER PRODUCTIVITY</p>
+      <h1>Build something.<br><span>Every day.</span></h1>
+      <p class="sub">A tiny dashboard to track what you learned, built, and shipped.</p>
+    </section>
+
+    <section class="stats">
+      <article><strong id="streak">0</strong><small>day streak</small></article>
+      <article><strong id="total">0</strong><small>days logged</small></article>
+      <article><strong id="hours">0</strong><small>hours coded</small></article>
+    </section>
+
+    <section class="grid">
+      <div class="card form-card">
+        <div class="card-head"><h2>Today's log</h2><span id="saved">● Not saved</span></div>
+        <label>What did you work on?</label>
+        <textarea id="work" placeholder="Built a login screen, learned recursion..."></textarea>
+        <div class="row">
+          <label class="grow">Hours
+            <input id="hoursInput" type="number" min="0" max="24" step="0.5" placeholder="2">
+          </label>
+          <label class="grow">Category
+            <select id="category">
+              <option>Development</option>
+              <option>DSA</option>
+              <option>ML / AI</option>
+              <option>College</option>
+              <option>Project</option>
+            </select>
+          </label>
+        </div>
+        <button id="save">Save today's progress →</button>
+      </div>
+
+      <div class="card heat-card">
+        <div class="card-head"><h2>Consistency</h2><span>Last 28 days</span></div>
+        <div class="heatmap" id="heatmap"></div>
+        <div class="legend"><span>Less</span><i></i><i></i><i></i><i></i><span>More</span></div>
+      </div>
+    </section>
+
+    <section class="card quote">
+      <p id="quote">Small commits compound into big projects.</p>
+      <button id="newQuote">another thought ↻</button>
+    </section>
+  </main>
+
+  <footer>DevPulse · vanilla HTML/CSS/JS · localStorage</footer>
+  <script src="script.js"></script>
+</body>
+</html>
