@@ -1,17 +1,13 @@
 # DevPulse
 
-A tiny developer productivity dashboard built with vanilla HTML, CSS and JavaScript.
+Developer productivity dashboard.
 
-## Features
-- Daily progress logging
-- Coding-hour tracker
-- Streak counter
-- 28-day contribution-style heatmap
-- localStorage persistence
-- Responsive layout
+## Day 2
+Added edit/delete for today's log, a dedicated entry card, delete confirmation, and preserved the streak/heatmap system.
 
-## Run
-Open `index.html` with VS Code Live Server.
+Run with VS Code Live Server.
 
-## GitHub practice
-Make small, genuine improvements as you work: UI polish, filters, export, charts, dark/light mode, etc. Commit each meaningful change so the repository naturally documents your progress.
+After replacing the project files:
+`git add .`
+`git commit -m "Add edit and delete daily logs"`
+`git push`
